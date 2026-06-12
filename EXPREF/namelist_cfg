@@ -26,7 +26,7 @@
 !-----------------------------------------------------------------------
 !MLF   rn_Dt       = 5400.     !  time step for the dynamics and tracer
    rn_Dt       = 10800.     !  time step for the dynamics and tracer
-
+/
 !-----------------------------------------------------------------------
 &namcfg        !   parameters of the configuration                      (default: use namusr_def in namelist_cfg)
 !-----------------------------------------------------------------------
