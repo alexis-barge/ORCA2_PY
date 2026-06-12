@@ -43,4 +43,10 @@ for file in EXPREF/* job.ksh
    do
       cp $file EXP00/
    done
+
+for file in FORCING/*nc
+   do
+      rm -f EXP00/$(basename "$file")
+      ln -s ../FORCING/$(basename "$file") EXP00/$(basename "$file")
+   done
 echo "   --> DONE COMPILE"
