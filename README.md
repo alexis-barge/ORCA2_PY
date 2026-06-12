@@ -54,7 +54,7 @@ rm namcouple*
 python3 ./main.py --exec preprod
 ```
 ```
-mpirun -np 5 ./nemo : -np 1 python3 ./main.py
+mpirun -np 1 ./nemo : -np 1 python3 ./main.py
 ```
 
 - A template submission script ```job.ksh``` is given to run the test on HPC center.
