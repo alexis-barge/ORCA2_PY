@@ -11,14 +11,14 @@ Test case for hybrid NEMO-Python on dev branch
 
 - Installed OASIS3-MCT v5.0 or later with Python interface
 - Installed XIOS with OASIS3-MCT
-- Installed Eophis package
+- Installed [Eophis](https://eophis.readthedocs.io/en/latest/install.html#) package
 
 ```
-git clone 
+git clone -b v1.1.0 https://github.com/IGE-OPERA/eophis.git eophis_v1.1.0
 cd eophis_v1.1.0
 pip install .
 
-# Test - require mpirun command authorized
+# Test - requires mpirun command authorized
 cd tests
 ./run_all_tests.sh
 ```
@@ -26,6 +26,11 @@ cd tests
 ## 2. Deploy config
 
 - Clone NEMO dev branch
+
+```
+git clone -b Fork-12-oasis-interface-for-python-scripts https://forge.nemo-ocean.eu/extdevs/nemo.git nemo
+```
+  
 - Deploy config:
 
 ```
