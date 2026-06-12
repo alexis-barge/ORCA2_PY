@@ -49,9 +49,19 @@ cd ORCA2_PY
 
 ```
 cd EXP00
+for file in ../FORCING/*
+do
+ln -s $file .
+done
+```
+
+```
 touch namcouple
 rm namcouple*
 python3 ./main.py --exec preprod
+```
+```
+DATADIR=
 mpirun -np 5 ./nemo.exe : -np 1 python3 ./main.py
 ```
 
