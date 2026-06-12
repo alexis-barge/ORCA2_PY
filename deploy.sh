@@ -8,10 +8,10 @@ echo "--------------------------"
 
 if [ ! -d "FORCING" ]; then mkdir FORCING; fi
 
-if [ ! -f "INPUTS/ORCA2_ICE_v5.0.0.tar.gz" ]; then 
+if [ ! -f "FORCING/ORCA2_ICE_v5.0.0.tar.gz" ]; then
    wget "https://gws-access.jasmin.ac.uk/public/nemo/sette_inputs/r5.0.0/ORCA2_ICE_v5.0.0.tar.gz" -O FORCING/ORCA2_ICE_v5.0.0.tar.gz || exit 2
 fi
-if [ ! -f "INPUTS/ORCA_R2_zps_domcfg.nc" ]; then tar -xf ORCA2_ICE_v5.0.0.tar.gz .; fi
+if [ ! -f "FORCING/ORCA_R2_zps_domcfg.nc" ]; then tar --strip-components=1 -xf FORCING/ORCA2_ICE_v5.0.0.tar.gz -C FORCING; fi
 echo "   --> DONE DOWNLOAD"
 
 
