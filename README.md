@@ -65,3 +65,21 @@ mpirun -np 5 ./nemo : -np 1 python3 ./main.py
 ```
 
 - A template submission script ```job.ksh``` is given to run the test on HPC center.
+
+## 4. Results
+
+- Eophis log ```eophis.out``` should print:
+
+```
+Iteration 99: 1058400s -- 12 days, 6:00:00
+   Treating sst, u received through tunnel TO_NEMO_FIELDS
+   Sending back pysst, pyu through tunnel TO_NEMO_FIELDS
+Iteration 100: 1069200s -- 12 days, 9:00:00
+   Treating sst, u received through tunnel TO_NEMO_FIELDS
+   Sending back pysst, pyu through tunnel TO_NEMO_FIELDS
+------------------- END OF LOOP -------------------
+
+  Closing tunnels
+
+EOPHIS run finished
+```
