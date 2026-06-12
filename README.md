@@ -61,7 +61,6 @@ rm namcouple*
 python3 ./main.py --exec preprod
 ```
 ```
-DATADIR=
 mpirun -np 5 ./nemo.exe : -np 1 python3 ./main.py
 ```
 
